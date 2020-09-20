@@ -6,7 +6,6 @@ root = Tk()
 root.configure(bg='blue')
 
 def get_data(data):
-    # global team1,team2,team1_score,team2_score
     team1, team2, team1_score, team2_score = data
     url='https://www.cricbuzz.com/'
     page = requests.get(url)
