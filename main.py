@@ -16,7 +16,7 @@ def get_data(data):
     team_1_score = soup.find_all(class_='cb-ovr-flo')[8].get_text()
     team_2_score = soup.find_all(class_='cb-ovr-flo')[10].get_text()
 
-    result_score = soup.find_all(class_='cb-ovr-flo cb-text-complete')[0].get_text()
+    result_score = soup.find_all(class_='cb-ovr-flo cb-text-live')[0].get_text()
 
     team1.config(text=team_1)
     team2.config(text=team_2)
@@ -46,7 +46,8 @@ result = Label(root,text='hit refresh',font='arial 11',bg='blue')
 result.grid(row=3, columnspan=2,pady=5)
 
 data = [team1,team2,team1_score,team2_score, result]
-refresh = Button(text='Refresh',command=get_data(data),bg='orange')
+ref = get_data(data)
+refresh = Button(text='Refresh',command=ref,bg='orange')
 refresh.grid(row=4, columnspan=2)
 
 root.mainloop()
