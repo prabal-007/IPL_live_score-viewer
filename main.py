@@ -29,7 +29,6 @@ def get_data(data):
     team2_score.update()
     result.update()
 
-
 a = Label(text='IPL 2020 live score',font='arial 8')
 a.grid(row=0,columnspan=2,pady=5)
 team1 = Label(text='Team 1',font='arial 20')
