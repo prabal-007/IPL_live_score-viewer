@@ -4,7 +4,6 @@ from tkinter import Tk, Label,Button,Grid,mainloop
 
 root = Tk()
 root.configure(bg='blue')
-
 def get_data(data):
     team1, team2, team1_score, team2_score, result = data
     url='https://www.cricbuzz.com/'
