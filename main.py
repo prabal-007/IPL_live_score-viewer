@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from tkinter import Tk, Label,Button,Grid,mainloop
 
-
 root = Tk()
 root.configure(bg='blue')
 
